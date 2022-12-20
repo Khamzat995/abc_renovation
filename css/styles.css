@@ -3762,12 +3762,18 @@ ul.custom-bullet-list.custom-icon li:before {
 
 .service-block-2 figure img {
   opacity: 1;
-  display: block;
+  /* display: block;
   -webkit-transition: all 1.5s ease-in-out;
   -moz-transition: all 1.5s ease-in-out;
   -o-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
   transform: scale(1);
+
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; */
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1.2);
+
+
 }
 
 .service-block-2 figure:after {

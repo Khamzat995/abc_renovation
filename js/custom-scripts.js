@@ -96,10 +96,10 @@ jQuery(function ($) {
             var $this = $(this);
 
             var bg_img = "images/home_1_slider_1.jpg",
-                    bg_color = "#000000",
-                    bg_opacity = "0.5",
-                    bg_color_2 = "#000000",
-                    bg_opacity_2 = "0.8";
+                bg_color = "#000000",
+                bg_opacity = "0.5",
+                bg_color_2 = "#000000",
+                bg_opacity_2 = "0.8";
 
             if ($this.is('[data-bg_img]')) {
                 bg_img = ', url("' + $this.data('bg_img') + '")';
@@ -220,8 +220,8 @@ jQuery(function ($) {
         $("#slider_1").find('.slider_item_container').each(function () {
             var $this = $(this);
             var bg_img = "",
-                    bg_color = "#000000",
-                    bg_opacity = "0.1";
+                bg_color = "#000000",
+                bg_opacity = "0.1";
             if ($this.is('[data-bg_img]')) {
                 bg_img = ', url("' + $this.data('bg_img') + '")';
             }
@@ -256,11 +256,11 @@ jQuery(function ($) {
         var $this = $slider_1;
 
         var items_val = 1,
-                bg_effect_val = true,
-                nav_val = false,
-                dots_val = true,
-                autoplay_val = true,
-                autoplaytimeout_val = 10000;
+            bg_effect_val = true,
+            nav_val = false,
+            dots_val = true,
+            autoplay_val = true,
+            autoplaytimeout_val = 10000;
         // Status.
         if ($this.attr('data-carousel') && $this.data('carousel') !== 1) {
             $this.removeClass('owl-carousel');
@@ -393,15 +393,15 @@ jQuery(function ($) {
             var $this = $(this);
 
             var bg_img = "images/home_1_slider_1.jpg",
-                    bg_color = "#000000",
-                    bg_opacity = "0.5",
-                    bg_color_2 = "#000000",
-                    bg_opacity_2 = "0.8",
-                    bg_position = "center center",
-                    bg_repeat = "no-repeat",
-                    bg_size = "cover",
-                    bg_overflow = "hidden",
-                    bg_attachment = "inherit";
+                bg_color = "#000000",
+                bg_opacity = "0.5",
+                bg_color_2 = "#000000",
+                bg_opacity_2 = "0.8",
+                bg_position = "center center",
+                bg_repeat = "no-repeat",
+                bg_size = "cover",
+                bg_overflow = "hidden",
+                bg_attachment = "inherit";
 
 
 
@@ -506,10 +506,10 @@ jQuery(function ($) {
             var $this = $(this);
 
             var items_val = 3,
-                    nav_val = true,
-                    dots_val = true,
-                    autoplay_val = true,
-                    autoplaytimeout_val = 5000;
+                nav_val = true,
+                dots_val = true,
+                autoplay_val = true,
+                autoplaytimeout_val = 5000;
             // Status.
             if ($this.attr('data-carousel') && $this.data('carousel') !== 1) {
 
@@ -574,10 +574,10 @@ jQuery(function ($) {
             var $this = $(this);
 
             var items_val = 3,
-                    nav_val = true,
-                    dots_val = true,
-                    autoplay_val = true,
-                    autoplaytimeout_val = 5000;
+                nav_val = true,
+                dots_val = true,
+                autoplay_val = true,
+                autoplaytimeout_val = 2500;
             // Status.
             if ($this.attr('data-carousel') && $this.data('carousel') !== 1) {
 
@@ -646,14 +646,12 @@ jQuery(function ($) {
     $(".filter-button").on("click", function () {
         var value = $(this).attr('data-filter');
 
-        if (value === "all")
-        {
+        if (value === "all") {
             //$('.filter').removeClass('hidden');
             $('.filter').show('1000');
-        } else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+        } else {
+            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
             $(".filter").not('.' + value).hide('3000');
             $('.filter').filter('.' + value).show('3000');
 
@@ -671,10 +669,10 @@ jQuery(function ($) {
             var $this = $(this);
 
             var items_val = 5,
-                    nav_val = false,
-                    dots_val = true,
-                    autoplay_val = true,
-                    autoplaytimeout_val = 5000;
+                nav_val = false,
+                dots_val = true,
+                autoplay_val = true,
+                autoplaytimeout_val = 5000;
 
 
             // Status.
@@ -772,10 +770,10 @@ jQuery(function ($) {
             var $this = $(this);
 
             var items_val = 6,
-                    nav_val = false,
-                    dots_val = true,
-                    autoplay_val = true,
-                    autoplaytimeout_val = 5000;
+                nav_val = false,
+                dots_val = true,
+                autoplay_val = true,
+                autoplaytimeout_val = 5000;
 
 
             // Status.
@@ -864,10 +862,10 @@ jQuery(function ($) {
             var $this = $(this);
 
             var items_val = 2,
-                    nav_val = false,
-                    dots_val = true,
-                    autoplay_val = true,
-                    autoplaytimeout_val = 5000;
+                nav_val = false,
+                dots_val = true,
+                autoplay_val = true,
+                autoplaytimeout_val = 5000;
 
 
             // Status.
@@ -957,10 +955,10 @@ jQuery(function ($) {
             var $this = $(this);
 
             var items_val = 3,
-                    nav_val = false,
-                    dots_val = true,
-                    autoplay_val = true,
-                    autoplaytimeout_val = 5000;
+                nav_val = false,
+                dots_val = true,
+                autoplay_val = true,
+                autoplaytimeout_val = 5000;
 
 
             // Status.
@@ -1108,10 +1106,10 @@ jQuery(function ($) {
 
         $('#coming_countdown').countdown('2020/10/10', function (event) {
             var $this = $(this).html(event.strftime(''
-                    + '<div class="countdown_container"><span class="count_number">%d</span><span class="count_text">Days</span></div>'
-                    + '<div class="countdown_container"><span class="count_number">%H</span><span class="count_text">Hours</span></div>'
-                    + '<div class="countdown_container"><span class="count_number">%M</span><span class="count_text">Miniutes</span></div>'
-                    + '<div class="countdown_container"><span class="count_number">%S</span><span class="count_text">Seconds</span></div>'));
+                + '<div class="countdown_container"><span class="count_number">%d</span><span class="count_text">Days</span></div>'
+                + '<div class="countdown_container"><span class="count_number">%H</span><span class="count_text">Hours</span></div>'
+                + '<div class="countdown_container"><span class="count_number">%M</span><span class="count_text">Miniutes</span></div>'
+                + '<div class="countdown_container"><span class="count_number">%S</span><span class="count_text">Seconds</span></div>'));
         });
 
     }
@@ -1274,132 +1272,132 @@ jQuery(function ($) {
         })
 
     }
-    
-     // Appointment Form.
-    
-if($('.appoinment-form').length) {
-        
+
+    // Appointment Form.
+
+    if ($('.appoinment-form').length) {
+
         // Initialize all the fileds value.
-        
-        var $appt_form = $(".appoinment-form");        
-              $appt_form.find('input,textarea,select').val("");
-        
+
+        var $appt_form = $(".appoinment-form");
+        $appt_form.find('input,textarea,select').val("");
+
         var emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
-              $appt_default_err_msg= "This field is required.",
-              $error_border =  "border-bottom: 1px solid red;";     
-        
-        $appt_form.find("button[type=submit]").on("click", function() {
-            
-            var appt_form_bValid, 
-              your_name_bValid,
-              your_email_bValid,
-              your_phone_bValid,
-              your_service_type_bValid,
-              textarea_message_bValid;   
-            
-                var $this = $(this);
-                var $this_appt_form = $this.closest('form'),
-                    $your_name = $this_appt_form.find("#your_name"),
-                    $your_email = $this_appt_form.find("#your_email"),
-                    $your_phone = $this_appt_form.find("#your_phone"),
-                    $your_service_type = $this_appt_form.find("#your_service_type"),
-                    $textarea_message = $this_appt_form.find("#textarea_message");
+            $appt_default_err_msg = "This field is required.",
+            $error_border = "border-bottom: 1px solid red;";
+
+        $appt_form.find("button[type=submit]").on("click", function () {
+
+            var appt_form_bValid,
+                your_name_bValid,
+                your_email_bValid,
+                your_phone_bValid,
+                your_service_type_bValid,
+                textarea_message_bValid;
+
+            var $this = $(this);
+            var $this_appt_form = $this.closest('form'),
+                $your_name = $this_appt_form.find("#your_name"),
+                $your_email = $this_appt_form.find("#your_email"),
+                $your_phone = $this_appt_form.find("#your_phone"),
+                $your_service_type = $this_appt_form.find("#your_service_type"),
+                $textarea_message = $this_appt_form.find("#textarea_message");
 
             var $all_fields = $([]).add($your_name).add($your_email).add($your_phone).add($your_service_type).add($textarea_message);
-            
-            
-                appt_form_bValid = true;
-                 
-                
-                // Name Validation.
-            
-                if( $your_name.val() === "" && $your_name.is('[required]') ) {
-                    
-                    your_name_bValid = false;
-                    $your_name.next("span").remove();
-                    $your_name.attr("style", $error_border).after("<span class='error'>" + $your_name.attr("data-msg") + "</span>");
-                    
-                } else {
-                    your_name_bValid = true;
-                    $your_name.removeAttr("style").next("span").remove();
-                    
-                }
-                
-                 appt_form_bValid = appt_form_bValid && your_name_bValid;
-            
-            
-               // Email Validation.  
-            
-                if( $your_email.val() === ""  || email_checkRegexp( $your_email , emailRegex) == false  ) {
-                    
-                    your_email_bValid = false;
-                    $your_email.next("span").remove();
-                    $your_email.attr("style", $error_border).after("<span class='error'>" + $your_email.attr("data-msg") + "</span>");
-                    
-                } else {
-                     your_email_bValid = true;
-                    $your_email.removeAttr("style").next("span").remove();
-                    
-                }
-                
-                appt_form_bValid = appt_form_bValid && your_email_bValid;
-                
-                // Phone No Validation.
-                
-                if( $your_phone.val() === "" && $your_phone.is('[required]') ) {
-                    
-                    your_phone_bValid = false;
-                    $your_phone.next("span").remove();
-                    $your_phone.attr("style", $error_border).after("<span class='error'>" + $your_phone.attr("data-msg") + "</span>");
-                    
-                } else {
-                    your_phone_bValid = true;
-                    $your_phone.removeAttr("style").next("span").remove();
-                }
-                
-                appt_form_bValid = appt_form_bValid && your_phone_bValid;
-                
-                
-                 
-                 // Your Service Validation.
-            
-                if( $your_service_type.val() === "" && $your_service_type.is('[required]') ) {
-                    
-                    var your_service_type_error_msg = ( $your_service_type.attr("data-msg") == undefined ) ? $appt_default_err_msg : $your_service_type.data("msg");
-                    your_service_type_bValid = false;
-                    $your_service_type.next("span").remove();
-                    $your_service_type.attr("style", $error_border).after("<span class='error'>" + your_service_type_error_msg + "</span>");
-                    
-                } else { 
-                    your_service_type_bValid = true;
-                    $your_service_type.removeAttr("style").next("span").remove();
-                    
-                }
-                
-                 appt_form_bValid = appt_form_bValid && your_service_type_bValid; 
-                 
-                 // Move Size Validation.
-            
-                if( $textarea_message.val() === "" && $textarea_message.is('[required]') ) {
-                    
-                    textarea_message_bValid = false;
-                    $textarea_message.next("span").remove();
-                    $textarea_message.attr("style", $error_border).after("<span class='error'>" + $textarea_message.attr("data-msg") + "</span>");
-                    
-                } else {
-                    textarea_message_bValid = true;
-                    $textarea_message.removeAttr("style").next("span").remove();
-                    
-                }
-                
-                 appt_form_bValid = appt_form_bValid && textarea_message_bValid;
-            
-                if ( appt_form_bValid === true ) {
-                    
-                    $all_fields.attr("disabled", "disabled");
-                    $this.after("<span class='form_msg'>Please wait ....</span>").attr("disabled","disabled");
-                    
-                    $.ajax({
+
+
+            appt_form_bValid = true;
+
+
+            // Name Validation.
+
+            if ($your_name.val() === "" && $your_name.is('[required]')) {
+
+                your_name_bValid = false;
+                $your_name.next("span").remove();
+                $your_name.attr("style", $error_border).after("<span class='error'>" + $your_name.attr("data-msg") + "</span>");
+
+            } else {
+                your_name_bValid = true;
+                $your_name.removeAttr("style").next("span").remove();
+
+            }
+
+            appt_form_bValid = appt_form_bValid && your_name_bValid;
+
+
+            // Email Validation.  
+
+            if ($your_email.val() === "" || email_checkRegexp($your_email, emailRegex) == false) {
+
+                your_email_bValid = false;
+                $your_email.next("span").remove();
+                $your_email.attr("style", $error_border).after("<span class='error'>" + $your_email.attr("data-msg") + "</span>");
+
+            } else {
+                your_email_bValid = true;
+                $your_email.removeAttr("style").next("span").remove();
+
+            }
+
+            appt_form_bValid = appt_form_bValid && your_email_bValid;
+
+            // Phone No Validation.
+
+            if ($your_phone.val() === "" && $your_phone.is('[required]')) {
+
+                your_phone_bValid = false;
+                $your_phone.next("span").remove();
+                $your_phone.attr("style", $error_border).after("<span class='error'>" + $your_phone.attr("data-msg") + "</span>");
+
+            } else {
+                your_phone_bValid = true;
+                $your_phone.removeAttr("style").next("span").remove();
+            }
+
+            appt_form_bValid = appt_form_bValid && your_phone_bValid;
+
+
+
+            // Your Service Validation.
+
+            if ($your_service_type.val() === "" && $your_service_type.is('[required]')) {
+
+                var your_service_type_error_msg = ($your_service_type.attr("data-msg") == undefined) ? $appt_default_err_msg : $your_service_type.data("msg");
+                your_service_type_bValid = false;
+                $your_service_type.next("span").remove();
+                $your_service_type.attr("style", $error_border).after("<span class='error'>" + your_service_type_error_msg + "</span>");
+
+            } else {
+                your_service_type_bValid = true;
+                $your_service_type.removeAttr("style").next("span").remove();
+
+            }
+
+            appt_form_bValid = appt_form_bValid && your_service_type_bValid;
+
+            // Move Size Validation.
+
+            if ($textarea_message.val() === "" && $textarea_message.is('[required]')) {
+
+                textarea_message_bValid = false;
+                $textarea_message.next("span").remove();
+                $textarea_message.attr("style", $error_border).after("<span class='error'>" + $textarea_message.attr("data-msg") + "</span>");
+
+            } else {
+                textarea_message_bValid = true;
+                $textarea_message.removeAttr("style").next("span").remove();
+
+            }
+
+            appt_form_bValid = appt_form_bValid && textarea_message_bValid;
+
+            if (appt_form_bValid === true) {
+
+                $all_fields.attr("disabled", "disabled");
+                $this.after("<span class='form_msg'>Please wait ....</span>").attr("disabled", "disabled");
+
+                $.ajax({
                     url: "free_quote_email.php",
                     type: 'POST',
                     dataType: 'JSON',
@@ -1412,25 +1410,25 @@ if($('.appoinment-form').length) {
                         textarea_message: $textarea_message.val()
                     },
                     success: function (data) {
-                        if ( data.status === 1) {
-                            
+                        if (data.status === 1) {
+
                             $this.next("span").remove();
                             $this.after("<span class='form_msg'>" + data.msg + "</span>");
-                            
-                            setTimeout(function(){
-                            
+
+                            setTimeout(function () {
+
                                 $all_fields.removeAttr("disabled").val("");
-                                
-                                $this.next("span").slideUp('slow',function(){
+
+                                $this.next("span").slideUp('slow', function () {
                                     $(this).remove();
                                     $this.removeAttr("disabled");
                                 });
-                                
-                            },3000)
+
+                            }, 3000)
                         } else {
-                            
+
                             $all_fields.removeAttr("disabled");
-                            
+
                         }
                     },
                     error: function (xhr, textStatus, e) {
@@ -1438,14 +1436,14 @@ if($('.appoinment-form').length) {
                         return;
                     }
                 });
-                    
-                    
-                }
-            
+
+
+            }
+
             return false;
-            
+
         })
-        
+
     }
 
 
