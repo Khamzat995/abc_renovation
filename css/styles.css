@@ -606,6 +606,102 @@ strong {
   color: #FFFFFF !important;
 }
 
+.text-light-color a {
+
+  color: #FFFFFF !important;
+}
+
+/* мигающий номер */
+#blink {
+  -webkit-animation: blink 1s linear infinite;
+  animation: blink 2s linear infinite;
+  width: 25px;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    color: #eb4d4b;
+  }
+
+  51% {
+    color: rgba(34, 34, 34, 0);
+  }
+
+  100% {
+    color: rgba(34, 34, 34, 0);
+  }
+}
+
+@keyframes blink {
+  50% {
+    color: #fdd700(34, 34, 34);
+  }
+
+  51% {
+    color: rgba(34, 34, 34, 0);
+  }
+
+  100% {
+    color: rgba(34, 34, 34, 0);
+  }
+}
+
+/* мигающий номер конец */
+
+
+.wave-1 {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 40px;
+  color: #FFFFFF !important;
+  margin-top: 10%;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+
+
 .text-dark-color {
   color: #111111 !important;
 }
@@ -2989,7 +3085,7 @@ ul.custom-bullet-list li:before {
   margin: 0 11px 0 0;
   height: 8px;
   position: absolute;
-  top: 15px;
+  top: 12px;
   left: 6px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -4276,6 +4372,17 @@ ul.custom-bullet-list.custom-icon li:before {
   opacity: 1;
 }
 
+/* мои доработки */
+.close-panel i {
+  font-size: 40px;
+  margin-left: 90%;
+  color: #dcb04d;
+}
+
+/* мои доработки конец */
+
+
+
 /*----- COUNTER LAYOUT ----*/
 .section-counter-bg {
   background-image: url("../images/counter_bg.jpg");
@@ -4864,7 +4971,7 @@ a.latest-date {
 }
 
 .news-content {
-  padding: 0 24px 24px;
+  padding: 0 10px 10px;
   position: relative;
 }
 
@@ -4899,7 +5006,7 @@ a.latest-date {
   padding: 4px 12px;
 }
 
-.latest-details a {
+/* .latest-details a {
   border-right: 1px solid #dcb04d;
   color: #FFFFFF;
   display: inline-block;
@@ -4916,6 +5023,26 @@ a.latest-date {
 }
 
 .latest-details a:hover {
+  color: #111111;
+} */
+.latest-details p {
+  border-right: 1px solid #dcb04d;
+  color: #FFFFFF;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 14px;
+  margin-right: 3px;
+  padding-right: 8px;
+  transition: all 0.3s ease 0s;
+}
+
+.latest-details p:last-child {
+  border-right: medium none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.latest-details p:hover {
   color: #111111;
 }
 
@@ -4973,6 +5100,7 @@ a.latest-date {
   font-size: 28px;
   line-height: 32px;
   font-weight: 700;
+  min-width: 250px;
 }
 
 .cta-layout-02 p {
@@ -7191,6 +7319,7 @@ footer .social-icons a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 40px;
+  border-radius: 5px;
 }
 
 footer .social-icons a:last-child {
