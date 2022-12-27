@@ -1074,18 +1074,18 @@ jQuery(function ($) {
         var map;
 
         $('#map_canvas').css({
-            'height': '400px'
+            'height': '200px'
         });
 
         map = new GMaps({
             div: '#map_canvas',
-            lat: -12.043333,
-            lng: -77.028333
+            lat: 41.000364,
+            lng: 28.614531,
         });
 
         map.addMarker({
-            lat: -12.043333,
-            lng: -77.028333,
+            lat: 41.000364,
+            lng: 28.614531,
             title: 'Lima',
             click: function (e) {
                 alert('You clicked in this marker');
