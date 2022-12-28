@@ -8464,9 +8464,9 @@ footer .social-icons a:hover {
 
   .main-header-2 .navbar-default .pull-right {
     float: none !important;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: baseline; */
   }
 
 
