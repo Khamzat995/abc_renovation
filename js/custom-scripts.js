@@ -37,6 +37,8 @@ jQuery(function ($) {
 
     }
 
+
+
     // ONE PAGE SMOOTH SCROLLING 
 
     function smooth_scrolling() {

@@ -690,6 +690,19 @@ strong {
   margin-top: 10%;
 }
 
+.wave-2 {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+
+}
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0.0deg)
@@ -726,8 +739,28 @@ strong {
   }
 }
 
+/* новая анимация тачка едет старт*/
+
+.tachka {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 35%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 
+/* новая анимация тачка едет финиш*/
 .text-dark-color {
   color: #111111 !important;
 }
@@ -8485,7 +8518,7 @@ footer .social-icons a:hover {
 
   .main-header-2 .navbar-default .navbar-collapse {
     margin-top: 48px;
-    background: #0d0d0d;
+    background: #0d0d0d00;
     padding: 0 0 16px 0;
     border: 0;
     position: absolute;
