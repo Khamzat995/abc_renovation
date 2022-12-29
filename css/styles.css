@@ -6413,7 +6413,7 @@ ul.pagination li a {
 }
 
 ul.pagination li a:hover {
-  backgroud: #000 !important;
+  background: #000 !important;
 }
 
 ul.pagination li a.current {
@@ -6447,7 +6447,7 @@ ul.pagination li:last-child {
 }
 
 .article-add-comments {
-  float: right;
+  float: none;
   display: inline-block;
   width: 24px;
   height: 24px;
