@@ -28,7 +28,7 @@
 
 <body>
 
-    <!-- <script>
+    <script>
         /* loader */
         const AmagiLoader = {
             __loader: null,
@@ -36,33 +36,20 @@
 
                 if (this.__loader == null) {
                     var divContainer = document.createElement('div');
-                    divContainer.style.position = 'fixed';
-                    divContainer.style.left = '0';
-                    divContainer.style.top = '0';
-                    divContainer.style.width = '100%';
-                    divContainer.style.height = '100%';
-                    divContainer.style.zIndex = '9998';
-                    divContainer.style.backgroundColor = 'rgba(250, 250, 250, 0.80)';
+                    divContainer.classList.add("containerLoader");
 
-                    var div = document.createElement('div');
-                    div.style.position = 'absolute';
-                    div.style.left = '50%';
-                    div.style.top = '50%';
-                    div.style.zIndex = '9999';
-                    div.style.height = '64px';
-                    div.style.width = '64px';
-                    div.style.margin = '-76px 0 0 -76px';
-                    div.style.border = '8px solid #e1e1e1';
-                    div.style.borderRadius = '50%';
-                    div.style.borderTop = '8px solid #eb4d4b';
-                    div.animate([
+                    var loaderRed = document.createElement('div');
+                    loaderRed.classList.add("loaderReder");
+
+
+                    loaderRed.animate([
                         { transform: 'rotate(0deg)' },
                         { transform: 'rotate(360deg)' }
                     ], {
-                        duration: 7000,
+                        duration: 1000,
                         iterations: Infinity
                     });
-                    divContainer.appendChild(div);
+                    divContainer.appendChild(loaderRed);
                     this.__loader = divContainer
                     document.body.appendChild(this.__loader);
                 }
@@ -78,10 +65,10 @@
         AmagiLoader.show();
         setTimeout(() => {
             AmagiLoader.hide();
-        }, 3000);
+        }, 5000);
 /* loader */
 
-    </script> -->
+    </script>
 
     <!-- <div id="preloader">
         <span class="margin-bottom"><img src="images/loader.gif" alt="Loading......" /></span>
@@ -535,6 +522,7 @@
                                 <span>работа 5500₺</span><br />
                                 <span>материалы 8700₺</span>
                             </h3>
+
                         </article>
 
 
@@ -615,7 +603,7 @@
     <div class="modal fade" id="project1">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header">Прихожая 8 м&sup2;
                     <button type="button" class="close" data-dismiss="modal" title="Close">
                         <span class="fa fa-times" aria-hidden="true"></span>
                     </button>
@@ -666,7 +654,7 @@
     <div class="modal fade" id="project2">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header">Гостиная 50 м&sup2;
                     <button type="button" class="close" data-dismiss="modal" title="Close">
                         <span class="fa fa-times" aria-hidden="true"></span>
                     </button>
@@ -717,7 +705,7 @@
     <div class="modal fade" id="project3">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header">Спальня 30 м&sup2;
                     <button type="button" class="close" data-dismiss="modal" title="Close">
                         <span class="fa fa-times" aria-hidden="true"></span>
                     </button>
@@ -768,7 +756,7 @@
     <div class="modal fade" id="project4">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header">Детская 20 м&sup2;
                     <button type="button" class="close" data-dismiss="modal" title="Close">
                         <span class="fa fa-times" aria-hidden="true"></span>
                     </button>
@@ -819,7 +807,7 @@
     <div class="modal fade" id="project5">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header">Ванная 10 м&sup2;
                     <button type="button" class="close" data-dismiss="modal" title="Close">
                         <span class="fa fa-times" aria-hidden="true"></span>
                     </button>
@@ -870,7 +858,7 @@
     <div class="modal fade" id="project6">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header">Кухня 12 м&sup2;
                     <button type="button" class="close" data-dismiss="modal" title="Close">
                         <span class="fa fa-times" aria-hidden="true"></span>
                     </button>
@@ -944,7 +932,7 @@
                             <h3 class="about-us-slogan about-us-slogan-bold text-light-color">
                                 ЛУЧШИЕ СПЕЦИАЛИСТЫ<br> <i class="text-curly text-highlighter-primary">К</i> ВАШИМ
                                 УСЛУГАМ
-                                !<br>
+                                <br>
                             </h3>
 
                             <div class="margin-top-48 text-light-color">
@@ -1022,11 +1010,26 @@
                     </h2>
                 </div> <!-- end .col-sm-12  -->
 
+
+
+
             </div> <!-- end .row  -->
+            <div class="about-details">
+
+                <ul class="custom-bullet-list" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <li><a href="#cosmo">Косметический </a></li>&nbsp;&nbsp;
+                    <li><a href="#standart">Стандартный </a></li>&nbsp;&nbsp;
+                    <li><a href="#kapital">Капитальный </a></li>&nbsp;&nbsp;
+                    <li><a href="#evro">Евроремонт </a></li>&nbsp;&nbsp;
+                    <li><a href="#desing">Дизайнерский </a></li>&nbsp;&nbsp;
+                    <li><a href="#exclusiv">Эксклюзивный </a></li>
+                </ul>
+
+            </div> <!--  end .about-details -->
 
             <div class="row clearfix">
 
-                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1" id="cosmo">
 
                     <div class="latest-blog theme-custom-box-shadow">
 
@@ -1081,7 +1084,7 @@
 
                 </div>
 
-                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1" id="standart">
 
                     <div class="latest-blog theme-custom-box-shadow">
                         <div class="latest-thumbnail">
@@ -1125,144 +1128,7 @@
                     </div> <!-- end latest  -->
                 </div>
 
-                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
-
-                    <div class="latest-blog theme-custom-box-shadow">
-                        <div class="latest-thumbnail">
-                            <img src="images/akros2.webp" alt="">
-                        </div>
-                        <div class="news-content">
-                            <h4 class="latest-title">Евроремонт
-                            </h4>
-                            <div class="latest-details">
-                                <p class="author"> от 2400₺ / м&sup2; </p>
-                            </div>
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseFree">
-                                <!-- 11111 collapseOne-->
-                                <p class="margin-top-24 text-light-color">
-                                <div class="btn btn-theme">УЗНАТЬ БОЛЬШЕ</div>
-                                </p>
-                            </div>
-                            <div id="collapseFree" class="panel-collapse collapse">
-                                <!-- 11111 collapseOne-->
-                                <div class="panel-body">
-                                    <p> Евроремонт, включает следующие виды работ:</p>
-                                    &Star; разработка индивидуального дизайн-проекта,<br />
-                                    &Star; выравнивание поверхностей,<br />
-                                    &Star; перепланировка помещения,<br />
-                                    &Star; перепланировка и установка электрики,<br />
-                                    &Star; сантехники,<br />
-                                    &Star; замена напольного покрытия,<br />
-                                    &Star; декор стен и др.<br /><br />
-                                    *Дополнительно: индивидуальный пошив штор или изготовление жалюзи согласно
-                                    дизайн-проекту.<br />
-                                    <br />*Срок выполнения работ от 20 дней.
-                                    <div class="close-panel" data-toggle="collapse" data-parent="#accordion"
-                                        href="#collapseFree">
-                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- end latest  -->
-                </div>
-
-                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
-
-                    <div class="latest-blog theme-custom-box-shadow">
-
-                        <div class="latest-thumbnail">
-                            <img src="images/20.webp" alt="">
-                        </div>
-                        <div class="news-content">
-                            <h4 class="latest-title">Дизайнерский
-                            </h4>
-                            <div class="latest-details">
-                                <p class="author"> от 4000₺ / м&sup2; </p>
-                            </div>
-
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseFour">
-                                <!-- 11111 collapseOne-->
-                                <p class="margin-top-24 text-light-color">
-                                <div class="btn btn-theme">УЗНАТЬ БОЛЬШЕ</div>
-                                </p>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse">
-                                <!-- 11111 collapseOne-->
-                                <div class="panel-body">
-                                    <p>В цену дизайнерского ремонта
-                                        входит:</p>
-                                    &Star; Разработка индивидуального дизайн-проекта,<br />
-                                    &Star; переносятся и подготавливаются стены, потолок, пол,<br />
-                                    &Star; монтируется электропроводка, <br />
-                                    &Star; приборы отопления и кондиционирования,<br />
-                                    &Star; штукатурка, шпатлевка;<br />
-                                    &Star; отделка потолка, стен, укладка пола;<br />
-                                    &Star; отделка ванной комнаты, санузла, монтаж сантехники;<br />
-                                    &Star; монтаж системы «умный дом»;<br />
-                                    &Star; установка мебели, аксессуаров.<br />
-                                    <br />*Срок выполнения работ от 30 дней.
-                                    <div class="close-panel" data-toggle="collapse" data-parent="#accordion"
-                                        href="#collapseFour">
-                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- end latest  -->
-
-                </div>
-
-                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
-
-                    <div class="latest-blog theme-custom-box-shadow">
-
-                        <div class="latest-thumbnail">
-                            <img src="images/1.webp" alt="">
-                        </div>
-                        <div class="news-content">
-                            <h4 class="latest-title">Эксклюзивный
-                            </h4>
-                            <div class="latest-details">
-                                <p class="author"> от 4000₺ / м&sup2; </p>
-                            </div>
-
-                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseFive">
-                                <!-- 11111 collapseOne-->
-                                <p class="margin-top-24 text-light-color">
-                                <div class="btn btn-theme">УЗНАТЬ БОЛЬШЕ</div>
-                                </p>
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse">
-                                <!-- 11111 collapseOne-->
-                                <div class="panel-body">
-                                    <p>В цену эксклюзивного ремонта
-                                        входит:</p>
-                                    &Star; Разработка индивидуального дизайн-проекта,<br />
-                                    &Star; переносятся и подготавливаются стены, потолок, пол,<br />
-                                    &Star; монтируется электропроводка, <br />
-                                    &Star; приборы отопления и кондиционирования,<br />
-                                    &Star; штукатурка, шпатлевка;<br />
-                                    &Star; отделка потолка, стен, укладка пола;<br />
-                                    &Star; отделка ванной комнаты, санузла, монтаж сантехники;<br />
-                                    &Star; монтаж системы «умный дом»;<br />
-                                    &Star; установка мебели, аксессуаров.<br />
-                                    <br />*Срок выполнения работ от 30 дней.
-                                    <div class="close-panel" data-toggle="collapse" data-parent="#accordion"
-                                        href="#collapseFive">
-                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- end latest  -->
-
-                </div>
-
-                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1" id="kapital">
 
                     <div class="latest-blog theme-custom-box-shadow">
 
@@ -1314,6 +1180,145 @@
                     </div> <!-- end latest  -->
 
                 </div>
+
+                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1" id="evro">
+
+                    <div class="latest-blog theme-custom-box-shadow">
+                        <div class="latest-thumbnail">
+                            <img src="images/akros2.webp" alt="">
+                        </div>
+                        <div class="news-content">
+                            <h4 class="latest-title">Евроремонт
+                            </h4>
+                            <div class="latest-details">
+                                <p class="author"> от 2400₺ / м&sup2; </p>
+                            </div>
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseFree">
+                                <!-- 11111 collapseOne-->
+                                <p class="margin-top-24 text-light-color">
+                                <div class="btn btn-theme">УЗНАТЬ БОЛЬШЕ</div>
+                                </p>
+                            </div>
+                            <div id="collapseFree" class="panel-collapse collapse">
+                                <!-- 11111 collapseOne-->
+                                <div class="panel-body">
+                                    <p> Евроремонт, включает следующие виды работ:</p>
+                                    &Star; разработка индивидуального дизайн-проекта,<br />
+                                    &Star; выравнивание поверхностей,<br />
+                                    &Star; перепланировка помещения,<br />
+                                    &Star; перепланировка и установка электрики,<br />
+                                    &Star; сантехники,<br />
+                                    &Star; замена напольного покрытия,<br />
+                                    &Star; декор стен и др.<br /><br />
+                                    *Дополнительно: индивидуальный пошив штор или изготовление жалюзи согласно
+                                    дизайн-проекту.<br />
+                                    <br />*Срок выполнения работ от 20 дней.
+                                    <div class="close-panel" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseFree">
+                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end latest  -->
+                </div>
+
+                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1" id="desing">
+
+                    <div class="latest-blog theme-custom-box-shadow">
+
+                        <div class="latest-thumbnail">
+                            <img src="images/20.webp" alt="">
+                        </div>
+                        <div class="news-content">
+                            <h4 class="latest-title">Дизайнерский
+                            </h4>
+                            <div class="latest-details">
+                                <p class="author"> от 4000₺ / м&sup2; </p>
+                            </div>
+
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseFour">
+                                <!-- 11111 collapseOne-->
+                                <p class="margin-top-24 text-light-color">
+                                <div class="btn btn-theme">УЗНАТЬ БОЛЬШЕ</div>
+                                </p>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <!-- 11111 collapseOne-->
+                                <div class="panel-body">
+                                    <p>В цену дизайнерского ремонта
+                                        входит:</p>
+                                    &Star; Разработка индивидуального дизайн-проекта,<br />
+                                    &Star; переносятся и подготавливаются стены, потолок, пол,<br />
+                                    &Star; монтируется электропроводка, <br />
+                                    &Star; приборы отопления и кондиционирования,<br />
+                                    &Star; штукатурка, шпатлевка;<br />
+                                    &Star; отделка потолка, стен, укладка пола;<br />
+                                    &Star; отделка ванной комнаты, санузла, монтаж сантехники;<br />
+                                    &Star; монтаж системы «умный дом»;<br />
+                                    &Star; установка мебели, аксессуаров.<br />
+                                    <br />*Срок выполнения работ от 30 дней.
+                                    <div class="close-panel" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseFour">
+                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end latest  -->
+
+                </div>
+
+                <div class="col-md-4 col-sm-10 col-xs-10 col-md-offset-0 col-sm-offset-1 col-xs-offset-1" id="exclusiv">
+
+                    <div class="latest-blog theme-custom-box-shadow">
+
+                        <div class="latest-thumbnail">
+                            <img src="images/1.webp" alt="">
+                        </div>
+                        <div class="news-content">
+                            <h4 class="latest-title">Эксклюзивный
+                            </h4>
+                            <div class="latest-details">
+                                <p class="author"> от 4000₺ / м&sup2; </p>
+                            </div>
+
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseFive">
+                                <!-- 11111 collapseOne-->
+                                <p class="margin-top-24 text-light-color">
+                                <div class="btn btn-theme">УЗНАТЬ БОЛЬШЕ</div>
+                                </p>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse">
+                                <!-- 11111 collapseOne-->
+                                <div class="panel-body">
+                                    <p>В цену эксклюзивного ремонта
+                                        входит:</p>
+                                    &Star; Разработка индивидуального дизайн-проекта,<br />
+                                    &Star; переносятся и подготавливаются стены, потолок, пол,<br />
+                                    &Star; монтируется электропроводка, <br />
+                                    &Star; приборы отопления и кондиционирования,<br />
+                                    &Star; штукатурка, шпатлевка;<br />
+                                    &Star; отделка потолка, стен, укладка пола;<br />
+                                    &Star; отделка ванной комнаты, санузла, монтаж сантехники;<br />
+                                    &Star; монтаж системы «умный дом»;<br />
+                                    &Star; установка мебели, аксессуаров.<br />
+                                    <br />*Срок выполнения работ от 30 дней.
+                                    <div class="close-panel" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseFive">
+                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end latest  -->
+
+                </div>
+
+
 
             </div> <!--  end .row  -->
 
@@ -1397,8 +1402,7 @@
                     <h4 class="heading-alt-style text-capitalize text-dark-color">Часто задаваемые вопросы</h4>
                     <span class="heading-separator heading-separator-horizontal"></span>
                     <h2 class="subheading-alt-style">
-                        Мы всегда открыты и готовы к общению с людьми!
-                        <br />Здесь Вы можете найти ответы на популярные вопросы.
+                        Здесь Вы можете найти ответы на популярные вопросы.
                         Если Вам понадобится дополнительная информация, наш специалист обязательно свяжется с Вами.
                     </h2>
                 </div> <!-- end .col-sm-12  -->

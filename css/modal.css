@@ -132,7 +132,7 @@ a {
 /* carousel-control */
 .carousel-control {
     color: #b8770d;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .carousel-control:hover,
@@ -150,6 +150,7 @@ a {
 
 
 }
+
 
 .modal-header .close {
     color: red;

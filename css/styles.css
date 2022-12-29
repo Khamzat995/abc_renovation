@@ -530,8 +530,34 @@ strong {
   padding: 4px;
 }
 
+/* new loader */
+.containerLoader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  background-color: rgba(250, 250, 250, 0.80);
+}
+
+.loaderReder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+  height: 64px;
+  width: 64px;
+  margin: -76px 0 0 -76px;
+  border: 8px solid #e1e1e1;
+  border-radius: 50px;
+  border-top: 8px solid #dcb04d;
+}
+
+/* new loader */
+
 /*----- PRE LOADER ----*/
-#preloader {
+/* #preloader {
   background: #ffffff;
   height: 100%;
   position: fixed;
@@ -545,7 +571,7 @@ strong {
   margin-top: -15px;
   position: absolute;
   top: 50%;
-}
+} */
 
 #backTop {
   width: 16px;
@@ -3925,23 +3951,24 @@ ul.custom-bullet-list.custom-icon li:before {
 }
 
 .service-block-2 figure span.fa {
-  position: absolute;
+  position: fixed;
   width: 48px;
   height: 48px;
   line-height: 48px;
   text-align: center;
   display: inline-block;
   bottom: 0;
-  right: 0;
-  margin: 0;
+  right: 45%;
+  margin-bottom: 80%;
   font-size: 18px;
-  -webkit-transition: all 0.5s ease-in-out;
+  /* -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; */
   color: #FFFFFF;
-  background: #dcb04d;
-  transform: scale(0);
+  background: #dcb04d70;
+  border-radius: 50%;
+  /* transform: scale(0); */
   z-index: 10;
 }
 
@@ -3964,7 +3991,8 @@ ul.custom-bullet-list.custom-icon li:before {
 .service-block-2 h3 span,
 .service-block-2 h3 a span {
   font-weight: 500;
-  background: #5a2918;
+  background: #5a291875;
+  border-radius: 3%;
   padding: 0px 12px;
   box-sizing: border-box;
   display: inline-block;
@@ -7872,6 +7900,10 @@ footer .social-icons a:hover {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1370px) {
+  .loaderReder {
+    left: 55%;
+  }
+
   #slider_1 {
     text-align: center;
   }
@@ -7920,6 +7952,9 @@ footer .social-icons a:hover {
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (max-width: 991px) {
+  .loaderReder {
+    left: 55%;
+  }
 
   /*-----  HELPER CLASS----*/
   .no-padding-pricing-table,
@@ -8243,6 +8278,10 @@ footer .social-icons a:hover {
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+  .loaderReder {
+    left: 60%;
+  }
+
 
   /*-----  HELPER CLASS----*/
   .no-padding-pricing-table,
@@ -8415,8 +8454,6 @@ footer .social-icons a:hover {
   .main-header-2 .navbar-default .navbar-toggle span.icon-bar {
     color: #dcb04d;
   }
-
-
 
 
   .main-header-2 .navbar-default .navbar-header {
@@ -8854,6 +8891,10 @@ footer .social-icons a:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (min-width: 0px) and (max-width: 479px) {
 
+  .loaderReder {
+    left: 60%;
+  }
+
   /*-----  HELPER CLASS----*/
   .no-padding-pricing-table,
   .no-padding {
@@ -9290,6 +9331,11 @@ footer .social-icons a:hover {
 
 /* Tab Portrait Size to Tab Landscape Size (devices and browsers) */
 @media only screen and (min-width: 380px) and (max-width: 480px) {
+
+  .loaderReder {
+    left: 60%;
+  }
+
   .xs-margin {
     margin-left: 20px;
     margin-right: 20px;
@@ -9313,6 +9359,10 @@ footer .social-icons a:hover {
 
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
+  .loaderReder {
+    left: 60%;
+  }
+
   .xs-margin {
     margin-left: 120px;
     margin-right: 120px;
